@@ -1,0 +1,260 @@
+body {
+    background-color: #202121;
+    margin: 0;
+    outline: none;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#dashboard-title-bar {
+    -webkit-app-region: drag;
+    height: 30px;
+    border-color: none;
+    background-color: #303030;
+    padding: 0;
+    margin: 0;
+}
+
+#dashboard-title {
+    position: fixed;
+    left: 10px;
+    top: 8px;
+    color: #aaa;
+    font-family: Arial;
+    font-size: small;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.dashboard-title-bar-btns {
+    -webkit-app-region: no-drag;
+    float: right;
+    top: 0;
+    height: 30px;
+    background-color: #303030;
+}
+
+.dashboard-minm-btn {
+    padding-left: 12px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #303030;
+    border: none;
+    font-family: Ariel;
+    color: rgb(146, 146, 146);
+    font-size: medium;
+    cursor: default;
+    --webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.dashboard-minm-btn:hover {
+    background-color: #4b4e4e;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.dashboard-close-btn {
+    padding-left: 10px;
+    padding-top: 6px;
+    box-sizing: border-box;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: #303030;
+    font-family: Ariel;
+    color: rgb(146, 146, 146);
+    font-size: medium;
+    cursor: default;
+    --webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.dashboard-close-btn:hover {
+    background-color: rgb(252, 39, 39);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.dashboard-content-wrapper {
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.dashboard_bottom_label {
+    text-align: center;
+    font-size: 11px;
+    font-family: Arial;
+    color: rgba(153, 205, 50, 0.543);
+    margin-top: 20%;
+    bottom: 0;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.add-income-btn {
+    outline: none;
+    background-color: #4caf50;
+    border: none;
+    width: 50%;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Ariel Narrow;
+    letter-spacing: 0.9px;
+    font-weight: lighter;
+    font-size: 13px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.add-income-btn:hover {
+    background-color: rgb(33, 177, 38);
+    color: whitesmoke;
+}
+
+.dashboard-main-logo-title {
+    margin-bottom: 2px;
+    text-align: center;
+    color: #3879BD;
+    font-size: smaller;
+    font-family: Ariel;
+    font-style: normal;
+}
+.content-wrapper{
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.btns-wrapper{
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: auto;
+
+}
+
+
+.add-expense-btn {
+    outline: none;
+    background-color: #4caf50;
+    border: none;
+    width: 50%;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Ariel Narrow;
+    letter-spacing: 0.9px;
+    font-weight: lighter;
+    font-size: 13px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.add-expense-btn:hover{
+    background-color: rgb(33, 177, 38);
+    color: whitesmoke;
+}
+
+.report-btn {
+    outline: none;
+    background-color: #4caf50;
+    border: none;
+    width: 50%;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Ariel Narrow;
+    letter-spacing: 0.9px;
+    font-weight: lighter;
+    font-size: 13px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.report-btn:hover{
+    background-color: rgb(33, 177, 38);
+    color: whitesmoke;
+}
+
+
+.balance-display{
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: auto;
+    /* margin-right: auto; */
+    color: whitesmoke;
+}
+
+
+
+.mod-income-btn {
+    outline: none;
+    background-color: #4caf50;
+    border: none;
+    width: 50%;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Ariel Narrow;
+    letter-spacing: 0.9px;
+    font-weight: lighter;
+    font-size: 13px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.mod-income-btn:hover {
+    background-color: rgb(33, 177, 38);
+    color: whitesmoke;
+}
+
+.mod-expense-btn {
+    outline: none;
+    background-color: #4caf50;
+    border: none;
+    width: 50%;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Ariel Narrow;
+    letter-spacing: 0.9px;
+    font-weight: lighter;
+    font-size: 13px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.mod-expense-btn:hover {
+    background-color: rgb(33, 177, 38);
+    color: whitesmoke;
+}

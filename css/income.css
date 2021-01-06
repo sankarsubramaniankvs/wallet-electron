@@ -1,0 +1,256 @@
+body {
+    background-color: #202121;
+    margin: 0;
+    outline: none;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#income-title-bar {
+    -webkit-app-region: drag;
+    height: 30px;
+    border-color: none;
+    background-color: #303030;
+    padding: 0;
+    margin: 0;
+}
+
+#income-title {
+    position: fixed;
+    left: 10px;
+    top: 8px;
+    color: #aaa;
+    font-family: Arial;
+    font-size: small;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.income-title-bar-btns {
+    -webkit-app-region: no-drag;
+    float: right;
+    top: 0;
+    height: 30px;
+    background-color: #303030;
+}
+
+.income-minm-btn {
+    padding-left: 12px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #303030;
+    border: none;
+    font-family: Ariel;
+    color: rgb(146, 146, 146);
+    font-size: medium;
+    cursor: default;
+    --webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.income-minm-btn:hover {
+    background-color: #4b4e4e;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.income-close-btn {
+    padding-left: 10px;
+    padding-top: 6px;
+    box-sizing: border-box;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: #303030;
+    font-family: Ariel;
+    color: rgb(146, 146, 146);
+    font-size: medium;
+    cursor: default;
+    --webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.income-close-btn:hover {
+    background-color: rgb(252, 39, 39);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.content-wrapper {
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.income-main-title {
+    margin-bottom: 2px;
+    text-align: center;
+    color: #3879BD;
+    font-size: smaller;
+    font-family: Ariel;
+    font-style: normal;
+}
+
+.inputs-wrapper {
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+input[type=text] {
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 40px;
+    border: 2px solid #585858;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    text-indent: 5px;
+}
+
+input[type=text]::placeholder {
+    color: rgb(136, 136, 136);
+    opacity: 1;
+}
+
+input[type=text]:focus {
+    background-color: rgb(233, 233, 233);
+    border-color: grey;
+    box-shadow: 0 0 8px 0 grey;
+}
+
+input[type=text]:hover {
+    background-color: rgb(233, 233, 233);
+    border-color: grey;
+    box-shadow: 0 0 8px 0 grey;
+}
+
+input[type=select] {
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 40px;
+    border: 2px solid #585858;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    text-indent: 5px;
+}
+
+input[type=select]::placeholder {
+    color: rgb(136, 136, 136);
+    opacity: 1;
+}
+
+input[type=select]:focus {
+    background-color: rgb(233, 233, 233);
+    border-color: grey;
+    box-shadow: 0 0 8px 0 grey;
+}
+
+input[type=select]:hover {
+    background-color: rgb(233, 233, 233);
+    border-color: grey;
+    box-shadow: 0 0 8px 0 grey;
+}
+
+.add_income_btn {
+    outline: none;
+    background-color: #4caf50;
+    border: none;
+    margin-top: 10px;
+    margin-left: 80px;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 7px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Ariel Narrow;
+    letter-spacing: 0.9px;
+    font-weight: lighter;
+    font-size: 13px;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.add_income_btn:hover {
+    background-color: rgb(33, 177, 38);
+    color: whitesmoke;
+}
+
+/* The container must be positioned relative: */
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+
+.select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}

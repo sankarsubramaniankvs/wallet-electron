@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/modify-income.css">
+</head>
+
+<body>
+    <div id='modify-income-title-bar'>
+        <div id='modify-income-title'>WALLET</div>
+        <div class='modify-income-title-bar-btns'>
+            <div id='modify-income-minm-btn' class='modify-income-minm-btn'>-</div>
+            <div id='modify-income-close-btn' class='modify-income-close-btn'>X</div>
+        </div>
+    </div>
+
+    <div class="content-wrapper" id="content-wrapper">
+
+        <div class="modify-income-main-title">MODIFY INCOME</div>
+        <div class="inputs-wrapper" id="inputs-wrapper">
+            <input type="text" , placeholder="Date" id="modify-income-date">
+            <input type="text" , placeholder="Particulars" id="modify-income-particulars" autofocus>
+            <div class="custom-select" id="custom-select" style="width:200px;">
+                <select id="income-category">
+                    <option value="1">CATEGORY?</option>
+                    <option value="pocket-money">Pocket Money</option>
+                    <option value="account-withdrawl">Account Withdrawl</option>
+                    <option values="other">Other</option>
+                </select>
+            </div>
+            <input type="text" , placeholder="Amount" id="modify-income-amount">
+        </div>
+        <div class='btns-wrapper' id='btns-wrapper'>
+            <div class="modify-income-prev-btn" id="modify-income-prev-btn"><</div>
+            <div class="modify-income_btn" id="modify-income_btn">MODIFY</div>
+            <div class="modify-income-next-btn" id="modify-income-next-btn">></div>
+        </div>
+
+
+
+    </div>
+    <script type="text/javascript" src="../js/modify-income.js"></script>
+</body>

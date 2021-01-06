@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/expense.css">
+</head>
+
+<body>
+    <div id='expense-title-bar'>
+        <div id='expense-title'>WALLET</div>
+        <div class='expense-title-bar-btns'>
+            <div id='expense-minm-btn' class='expense-minm-btn'>-</div>
+            <div id='expense-close-btn' class='expense-close-btn'>X</div>
+        </div>
+    </div>
+
+    <div class="content-wrapper" id="content-wrapper">
+
+        <div class="expense-main-title">ADD EXPENSE</div>
+        <div class="inputs-wrapper" id="inputs-wrapper">
+            <input type="text" , placeholder="Date" id="expense-date">
+            <input type="text" , placeholder="Particulars" id="expense-particulars" autofocus>
+            <div class="custom-select" id="custom-select" style="width:200px;">
+                <select id='expense-category'>
+                    <option value="1">CATEGORY?</option>
+                    <option value="travel">Travel</option>
+                    <option value="food">Food</option>
+                    <option value="rent">Rent</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="telecom">Telecom</option>
+                    <option value="education>Education</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <input type="text" , placeholder="Amount" id="expense-amount">
+            <div class="add_expense_btn" id="add_expense_btn">SUBMIT</div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="../js/expense.js"></script>
+</body>

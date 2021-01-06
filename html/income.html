@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/income.css">
+</head>
+
+<body>
+    <div id='income-title-bar'>
+        <div id='income-title'>WALLET</div>
+        <div class='income-title-bar-btns'>
+            <div id='income-minm-btn' class='income-minm-btn'>-</div>
+            <div id='income-close-btn' class='income-close-btn'>X</div>
+        </div>
+    </div>
+
+    <div class="content-wrapper" id="content-wrapper">
+
+        <div class="income-main-title">ADD INCOME</div>
+        <div class="inputs-wrapper" id="inputs-wrapper">
+            <input type="text" , placeholder="Date" id="income-date">
+            <input type="text" , placeholder="Particulars" id="income-particulars" autofocus>
+            <div class="custom-select" id="custom-select" style="width:200px;">
+                <select id="income-category">
+                    <option value="1">CATEGORY?</option>
+                    <option value="pocket-money">Pocket Money</option>
+                    <option value="account-withdrawl">Account Withdrawl</option>
+                    <option values="other">Other</option>
+                </select>
+            </div>
+            <input type="text" , placeholder="Amount" id="income-amount">
+            <div class="add_income_btn" id="add_income_btn">SUBMIT</div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="../js/income.js"></script>
+</body>

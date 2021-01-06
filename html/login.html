@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/95c815a5a7.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div id='login-title-bar'>
+        <div id='login-title'>LOGIN</div>
+        <div class='login-title-bar-btns'>
+            <div id='login-minm-btn' class='login-minm-btn'>-</div>
+            <div id='login-close-btn' class='login-close-btn'>X</div>
+        </div>
+    </div>
+
+    <div class="login-loading-mask-wrapper" id="login-loading-mask-wrapper">
+        <div class="login-content-wrapper">
+            <div class="login-main-logo"></div>
+            <div class="login-main-logo-title">WALLET</div>
+            <div class="login-input-group">
+                <label class="login-show-error" id="login-show-error"></label>
+                <div class="login-input-icon-username login-input-icon-username-bg">
+                    <input type="text" , placeholder="username" id="login-username" autofocus>
+                    <icon class="fa fa-user fa-lg fa-fw" aria-hiddem="true"></icon>
+                </div>
+
+                <div class="login-input-icon-password login-input-icon-password-bg">
+                    <input type="password" , placeholder="password" id="login-password">
+                    <icon class="fa fa-shield fa-lg fa-fw" aria-hidden="true"></icon>
+                    <iconEye id="login-toggle-password"
+                        class="fa fa-fw fa-lg fa-eye-slash login-hide-show-password-icon">
+                    </iconEye>
+                </div>
+                <div class="signin-or-signup-btns">
+                    <div class="signin-btn-with-loading-group">
+                        <button class="signin-btn" id="signin-btn">Signin</button>
+                        <button class="signin-loading-spinner-container" id="signin-loading-spinner-container">
+                            <div class="signin-loading-spinner"></div>
+                        </button>
+                    </div>  
+                </div>
+
+                <label class="login_bottom_label">2021 @ All Rights Reserved</label>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../js/login.js"></script>
+</body>
+
+</html>
